@@ -1,0 +1,79 @@
+.guide{
+    padding-top: 100px;
+    .guide__body{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 120px;
+        background-image: url(../../photos/Path\ 2.png);
+        background-repeat: no-repeat;
+        background-size: 1030px 20px;
+        background-position: 0 40px;
+        .card{
+            width: 300px;
+            &__p{
+                margin-top: 40px;
+                h2{
+                    color: rgba(73, 85, 103, 1);
+                    font-weight: 700;
+                }
+                p{
+                    color: #939CAA;
+                    line-height: 25px;
+                }
+            }
+        }
+    }   
+}
+@media screen and (max-width: 768px) {
+    .guide{
+        max-width: 768px;
+        padding-top: 0;
+        .guide__body{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            background-image: url(../../photos/Path\ 2.png);
+            background-repeat: no-repeat;
+            background-size: 20px 600px;
+            background-position: 140px -10px;
+            .card{
+                width: 600px;
+                display: flex;
+                flex-direction: flex;
+                &__p{
+                    margin-left: 50px;
+                }
+            }
+        }   
+    }
+}
+@media screen and (max-width: 375px) {
+    .guide{
+        max-width: 375px;
+        padding-top: 0;
+        .guide__body{
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            background-image: url(../../photos/Path\ 2.png);
+            background-repeat: no-repeat;
+            background-size: 20px 600px;
+            background-position: 140px -10px;
+            .card{
+                width: 350px;
+                flex-direction: column;
+                text-align: center;
+                background-image: none;
+                img{
+                    max-width: 70%;
+                    margin: 0 auto;
+                    margin-left: 150px;
+                }
+                &__p{
+                    margin-top: 0;
+                }
+                
+            }
+        }   
+    }
+}
